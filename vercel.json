@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "cleaner/dist/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "customer/dist/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/cleaner/(.*)",
+      "dest": "/cleaner/dist/$1"
+    },
+    {
+      "src": "^/customer/(.*)",
+      "dest": "/customer/dist/$1"
+    },
+    {
+      "src": "/cleaner",
+      "dest": "/cleaner/dist/index.html"
+    },
+    {
+      "src": "/customer",
+      "dest": "/customer/dist/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
