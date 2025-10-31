@@ -1,0 +1,9 @@
+{
+  "project": "cleanzup",
+  "default_city": "Nellore",
+  "default_lat": 14.4426,
+  "default_lng": 79.9865,
+  "default_price": 500,
+  "theme_auto_switch": true,
+  "navigation_open_google_maps": true
+}
