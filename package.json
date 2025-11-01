@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "cd cleaner && npm install && npm run build && cd ../customer && npm install && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
